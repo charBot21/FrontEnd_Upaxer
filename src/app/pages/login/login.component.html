@@ -1,0 +1,71 @@
+<div class="login-container">
+
+    <mat-card>
+        <div class="divider">
+
+            <!-- Message -->
+            <div class="message-container" >
+                <h1>
+                    {{ 'login.welcome' | translate }}
+                </h1>
+
+                <p class="general-text" >
+                    {{ 'login.message' | translate }}
+                </p>
+            </div>
+
+
+            <!-- Form -->
+            <div >
+                <div class="form-group">    
+                    <form [formGroup]="loginForm">
+                        <mat-form-field >
+                            <mat-label>
+                                {{ 'form.email' | translate }}
+                            </mat-label>
+                            <input 
+                                matInput
+                                [formControl]='userEmail'>
+
+                                <mat-error *ngIf="userEmail">
+                                    {{ 'messages.errorInput' | translate }}
+                                </mat-error>
+                        </mat-form-field>
+                    </form>
+
+                    <form [formGroup]="loginForm">
+                        <mat-form-field >
+                            <mat-label>
+                                {{ 'form.password' | translate }}
+                            </mat-label>
+                            <input 
+                                matInput 
+                                [type]="hide ? 'password' : 'text'"
+                                [formControl]='userPassword'>
+                                <button 
+                                    mat-icon-button matSuffix 
+                                    (click)="hide = !hide" 
+                                    [attr.aria-label]="'Hide password'" 
+                                    [attr.aria-pressed]="hide">
+                                    <mat-icon>
+                                        {{hide ? 'visibility_off' : 'visibility'}}
+                                    </mat-icon>
+                                </button>
+
+                            <mat-error *ngIf="userPassword">
+                                {{ 'messages.errorInput' | translate }}
+                            </mat-error>
+                        </mat-form-field>
+                    </form>
+                </div>
+
+                <div class="form-container" >
+                    <button class="general-text" mat-stroked-button>
+                        {{ 'buttons.login' | translate }}
+                    </button>
+                </div>
+            </div>
+        </div>         
+    </mat-card>
+
+</div>

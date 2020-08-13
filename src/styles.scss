@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+}
+
+/* Texts */
+// Titles
+h1, h3 {
+    font-family: 'OxygenBold', sans-serif;
+    margin: 0px;
+}
+
+// General
+.general-text {
+    font-size: 20px;
+    font-family: 'OxygenRegular', sans-serif;
+}
+
+/* Images */
+.logo-gral {
+    width: 30%;
+    margin: auto;
+    padding: 30px 0px;
+}
+
+/* Importación de fuentes */
+@font-face {
+    font-family: OxygenLight;
+    src: url('./assets/fonts/Oxygen-Light.ttf');
+}
+
+@font-face {
+    font-family: OxygenRegular;
+    src: url('./assets/fonts/Oxygen-Regular.ttf');
+}
+
+@font-face {
+    font-family: OxygenBold;
+    src: url('./assets/fonts/Oxygen-Bold.ttf');
+}
+
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
+    // General
+    .general-text {
+        font-size: 13px;
+    }
+
+    /* Images */
+    .logo-gral {
+        padding: 10px 0px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* For tablets: */
+
+    // General
+    .general-text {
+        font-size: 16px;
+    }
+
+    /* Images */
+    .logo-gral {
+        padding: 50px 0px;
+    }
+}

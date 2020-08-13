@@ -1,0 +1,37 @@
+{
+    "lenguage": {
+        "spanisch": "SP",
+        "englisch": "EN"
+    },
+
+    "menu": {
+        "home": "Home",
+        "login": "Login"
+    },
+
+    "principal": {
+        "title": "Feel the passion for cars."
+    },
+
+    "about": {
+        "message": "Discover the world of motorsport."
+    },
+
+    "login": {
+        "welcome": "Welcome",
+        "message": "Enter your email and password to log in."
+    },
+
+    "form": {
+        "email": "Email",
+        "password": "Password"
+    },
+
+    "buttons": {
+        "login": "Login"
+    },
+
+    "messages": {
+        "errorInput": "Please enter a permitted value."
+    }
+}

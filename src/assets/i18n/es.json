@@ -1,0 +1,37 @@
+{
+    "lenguage": {
+        "spanisch": "ES",
+        "englisch": "IN"
+    },
+
+    "menu": {
+        "home": "Inicio",
+        "login": "Iniciar sesión"
+    },
+
+    "principal": {
+        "title": "Siente la pasión por los autos."
+    },
+
+    "about": {
+        "message": "Descubre el mundo del automovilismo."
+    },
+
+    "login": {
+        "welcome": "Bienvenido",
+        "message": "Ingresa tu correo y contraseña para iniciar sesión."
+    },
+
+    "form": {
+        "email": "Correo",
+        "password": "Contraseña"
+    },
+
+    "buttons": {
+        "login": "Iniciar sesión"
+    },
+
+    "messages": {
+        "errorInput": "Ingresa un valor permitido."
+    }
+}

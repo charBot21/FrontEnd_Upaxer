@@ -1,0 +1,162 @@
+.login-container {
+    background-image: url('../../../assets/images/bg_login.jpg');
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.mat-card {
+    background-color: rgba($color: #292929, $alpha: 0.40);
+    color: #FFFFFF;
+}
+
+// form
+.mat-input-element {
+    caret-color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'OxygenRegular', sans-serif;
+}
+
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-label {
+    color: #DCDCDC;
+    font-family: 'OxygenRegular', sans-serif;
+}
+
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: #DCDCDC;
+}
+
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+    color: #FFFFFF;
+    font-family: 'OxygenRegular', sans-serif;
+}
+
+::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple {
+    background-color: #FFFFFF;
+}
+
+// button
+.mat-stroked-button {
+    border-color: #FFFFFF;
+    border: 1px solid;
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+/* Containers */
+.message-container {
+    margin: auto;
+    padding: 0px 60px;
+}
+
+.form-container {
+    display: grid;
+    justify-items: center;
+}
+
+form {
+    display: grid;
+    padding: 0px 10px;
+    width: 400px;
+    font-size: 20px;
+    font-family: 'OxygenRegular', sans-serif;
+}
+
+.form-group {
+    display: grid;
+    justify-content: center;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .login-container {
+        background-image: linear-gradient( 
+            rgba($color: #292929, $alpha: 0.35), 
+            rgba($color: #292929, $alpha: 0.35) 
+            ), url('../../../assets/images/bg_login_2.jpg');
+    }
+
+    .divider {
+        display: block;
+    }
+
+    form {
+        font-size: 13px;
+        width: 250px;
+    }
+    .mat-input-element {
+        font-size: 13px;
+    }
+
+    // button
+    .mat-stroked-button {
+        margin-bottom: 30px;
+    }
+    
+    /* Containers */
+    .message-container {
+        padding: 0px 20px;
+        margin: 50px 0px;
+    }
+
+    .mat-card {
+        background-color: rgba($color: #292929, $alpha: 0.70);
+        margin: 0px 10px;
+    }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+
+    .divider {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    form {
+        padding: 0px 5px;
+        width: 200px;
+    }
+
+    // button
+    .mat-stroked-button {
+        width: 60%;
+        margin-bottom: 10px;
+        height: 40px;
+    }
+    /* Containers */
+    .message-container {
+        padding: 0px 20px;
+        margin: 25px 0px;
+    }
+
+    .mat-card {
+        background-color: rgba($color: #292929, $alpha: 0.70);
+        margin: 0px 10px;
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* For tablets: */
+    .login-container {
+        background-image: linear-gradient( 
+            rgba($color: #292929, $alpha: 0.35), 
+            rgba($color: #292929, $alpha: 0.35) 
+            ), url('../../../assets/images/bg_login_2.jpg');
+    }
+}
